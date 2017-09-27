@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/commodityDetail.css">
+</head>
+<body>
+
+<!--头部-->
+<!--<header>-->
+    <!--<span>商品详情</span>-->
+<!--</header>-->
+
+<!--内容-->
+<div class="comDe-con">
+    <!-- 轮播图 -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/banner1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/banner2.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/banner3.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/banner4.png" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <!--<div class="swiper-pagination"></div>-->
+        <!-- Add Arrows -->
+        <!--<div class="swiper-button-next"></div>-->
+        <!--<div class="swiper-button-prev"></div>-->
+    </div>
+    <!--文字描述-->
+    <div class="textDetail">
+        <div class="textDetail-box">
+            <p class="textDetail-name">商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品商品名称商商品名称商名称</p>
+            <div class="textDetail-img shoucang">
+                <img src="images/xin.png" alt="">
+                <span>收藏</span>
+            </div>
+        </div>
+        <span class="money">￥20000.00</span>
+        <p class="textDetail-text">商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简</p>
+    </div>
+    <!--视频部分-->
+    <!--<div class="video">-->
+        <!--<img src="images/video.png" alt="">-->
+    <!--</div>-->
+    <video src="images/movie.ogg" controls="controls" width="100%">
+        您的浏览器不支持 video 标签。
+    </video>
+    <!--精品推荐-->
+    <div class="boutique">
+        <h2>精品推荐</h2>
+        <ul>
+            <li>
+                <div class="comm-img">
+                    <img src="images/feicui.png" alt="">
+                </div>
+                <div class="comm-detail">
+                    <div class="comm-detail-top">
+                        <div class="cdt-left">
+                            <p>商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</p>
+                            <span>20000.00</span>
+                        </div>
+                        <div class="cdt-right shoucang">
+                            <img src="images/xin.png" alt="">
+                            <span>收藏</span>
+                        </div>
+                    </div>
+
+                    <div class="comm-detail-bottom">
+                       <p>商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介</p>
+                    </div>
+                </div>
+
+
+            </li>
+            <li>
+                <div class="comm-img">
+                    <img src="images/feicui.png" alt="">
+                </div>
+                <div class="comm-detail">
+                    <div class="comm-detail-top">
+                        <div class="cdt-left">
+                            <p>商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</p>
+                            <span>20000.00</span>
+                        </div>
+                        <div class="cdt-right shoucang">
+                            <img src="images/xin.png" alt="">
+                            <span>收藏</span>
+                        </div>
+                    </div>
+
+                    <div class="comm-detail-bottom">
+                        <p>商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介</p>
+                    </div>
+                </div>
+
+
+            </li>
+            <li>
+                <div class="comm-img">
+                    <img src="images/feicui.png" alt="">
+                </div>
+                <div class="comm-detail">
+                    <div class="comm-detail-top">
+                        <div class="cdt-left">
+                            <p>商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</p>
+                            <span>20000.00</span>
+                        </div>
+                        <div class="cdt-right shoucang">
+                            <img src="images/xin.png" alt="">
+                            <span>收藏</span>
+                        </div>
+                    </div>
+
+                    <div class="comm-detail-bottom">
+                        <p>商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介商品简介</p>
+                    </div>
+                </div>
+
+
+            </li>
+        </ul>
+    </div>
+
+
+
+</div>
+
+<!--引入js文件-->
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/commodityDetail.js"></script>
+</body>
+</html>

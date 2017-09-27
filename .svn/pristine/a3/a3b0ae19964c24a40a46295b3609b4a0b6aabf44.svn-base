@@ -1,0 +1,53 @@
+/**
+ * 日期 2017/9/22
+ */
+
+(function (w) {
+    //翡翠app
+    var apiHost='http://192.168.199.124:8081';
+
+    //配置项
+    w.C={};
+    //域名
+    C.host=apiHost+'/huifa/mobile/';
+
+    // C.marketToken=localStorage.getItem('token');
+    localStorage.setItem('token','201709181509405117a680d79b7f3f4bfc9c0b497395b511bb');
+    C.marketToken=localStorage.getItem('token');
+
+    //获取微信oppenId
+    C.getWxUserInfo='http://www.rrfun.com.cn/Uc/getInfo';
+
+    //mall接口
+    C.interface={
+        //在线提交
+        discount:'web/feedback',
+
+    };
+
+
+    //商城合mall接口地址
+    for (k in C.interface){
+        C.interface[k]=C.host + C.interface[k];
+    }
+
+
+    //获取当前域名
+    var localHostUrl = window.location.href.replace(/(\?.+?)$/g, '');
+    localHostUrl = localHostUrl.replace(localHostUrl.split("/").pop(), '');
+    C.localHostUrl = localHostUrl;
+
+})(window);
+
+
+
+
+
+
+
+
+
+
+
+
+

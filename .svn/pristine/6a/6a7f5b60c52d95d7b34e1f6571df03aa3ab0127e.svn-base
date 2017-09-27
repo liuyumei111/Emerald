@@ -1,0 +1,34 @@
+(function () {
+
+    //后退一步
+    $('.history').click(function () {
+        history.go(-1);
+    });
+
+//    类目
+    var leiM=$('.sC-box-ul-ol');
+    leiM.addClass('none');
+    leiM.eq(0).removeClass('none');
+
+    $('.li-target').each(function (index, item) {
+        $(item).click(function () {
+            var _this=$(this)
+            $('.li-target').removeClass('li-active');
+            _this.addClass('li-active');
+
+            $('.iClass').addClass('i-active');
+            _this.find('i').removeClass('i-active');
+            var that = leiM.eq(index);
+            leiM.addClass('none');
+            that.removeClass('none');
+        })
+    });
+
+    leiM.find('li').click(function () {
+        $(this).addClass('bac-color');
+        console.log($(this).html())
+        // window.location.href='newRecommend.html'
+    })
+
+})();
+

@@ -1,0 +1,99 @@
+@px:2.88px;
+html,body{
+  background: #fff;
+}
+//<!--头部-->
+header{
+  position: relative;
+  width: 100%;
+  height: 135/@px;
+  background: #fff;
+  border-bottom: 1px solid #d1d1d1;
+    >span{
+      width: 80/@px;
+      height: 60/@px;
+      background: url("../images/fanhui.png")no-repeat;
+      background-size: 100% 100%;
+      display: inline-block;
+      position: absolute;
+      top: 35/@px;
+      left: 40/@px;
+  }
+}
+
+//<!--内容部分-->
+.sC-box{
+  padding: 0 28/@px 0 0;
+  width: 100%;
+  .sC-box-ul{
+    //width: 35%;
+    //background: #eeeeee;
+    z-index: 5;
+    position: relative;
+    >li{
+      //display: flex;
+      span{
+        margin:0 30/@px;
+        text-align: center;
+        padding-left: 5/@px;
+        line-height: 176/@px;
+        border-bottom: 1px solid #bcbcbc;
+        font-size: 46/@px;
+        display: inline-block;
+        width: 30%;
+        >.i-active{
+          width: 30/@px;
+          height: 30/@px;
+          border-top: 1px solid #60656b;
+          border-right: 1px solid #60656b;
+          transform: rotate(45deg);
+          display: inline-block;
+        }
+      }
+      >.sC-box-ol{
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+        >a{
+          width: 30%;
+          text-align: center;
+          background: #eeeeee;
+          margin-left: 3.25%;
+          font-size: 36/@px;
+          height: 130/@px;
+          line-height: 130/@px;
+          margin-top: 30/@px;
+          color: #61666c;
+        }
+        >.a-class{
+          background: #c3b380;
+          color: #f0f0f0;
+        }
+      }
+      .none{
+        display: none;
+      }
+    }
+    >.li-active{
+      background: #fff;
+      span{
+        border: none;
+        color: #c3b380;
+      }
+    }
+  }
+
+  .sC-box-ul-bg{
+    width: 34%;
+    height: 100%;
+    background: #eeeeee;
+    position: absolute;
+    top: 135/@px;
+    left: 0;
+    z-index: 1;
+  }
+}

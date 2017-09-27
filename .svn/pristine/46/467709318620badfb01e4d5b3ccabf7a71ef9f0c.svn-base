@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品类目</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/aui.css">
+    <link rel="stylesheet" href="css/shopCatalog.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <span class="history"></span>
+    <div class="aui-searchbar" id="search">
+        <div class="aui-searchbar-input aui-border-radius">
+            <i class="aui-iconfont aui-icon-search"></i>
+            <input type="search" placeholder="请输入搜索内容" id="search-input">
+            <div class="aui-searchbar-clear-btn">
+                <i class="aui-iconfont aui-icon-close"></i>
+            </div>
+        </div>
+        <div class="aui-searchbar-btn" tapmode>取消</div>
+    </div>
+</header>
+<!--内容部分-->
+<div class="sC-box">
+    <ul class="sC-box-ul">
+        <li>
+            <span class="li-target li-active">种类 <i class="iClass"></i></span>
+            <ol class="sC-box-ul-ol">
+                <li>名称00</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+
+            </ol>
+        </li>
+        <li>
+        <span class="li-target">种类 <i class="iClass i-active "></i></span>
+        <ol class="sC-box-ul-ol">
+            <li>名称11</li>
+            <li>名称</li>
+            <li>名称</li>
+            <li>名称</li>
+            <li>名称</li>
+            <li>名称</li>
+            <li>名称</li>
+            <li>名称</li>
+            <li>名称</li>
+            <li>名称</li>
+            <li>名称</li>
+            <li>名称</li>
+            <li>名称</li>
+            <li>名称</li>
+
+        </ol>
+    </li>
+        <li>
+            <span class="li-target">种类 <i class="iClass i-active "></i></span>
+            <ol class="sC-box-ul-ol">
+                <li>名称22</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+
+            </ol>
+        </li>
+        <li>
+            <span class="li-target">种类 <i class="iClass i-active "></i></span>
+            <ol class="sC-box-ul-ol">
+                <li>名称33</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+
+            </ol>
+        </li>
+        <li>
+            <span class="li-target">种类 <i class="iClass i-active "></i></span>
+            <ol class="sC-box-ul-ol">
+                <li>名称44</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+
+            </ol>
+        </li>
+
+    </ul>
+    <!--背景块-->
+    <div id="ul-back"></div>
+</div>
+
+<!--引入js文件-->
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/search.js"></script>
+<script src="js/shopCatalog.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+@px:2.88px;
+
+body{
+  background: #fff;
+}
+//头部
+header{
+  width: 100%;
+  line-height: 90/@px;
+  text-align: center;
+  span{
+    color: #51585f;
+    font-size: 46/@px;
+  }
+}
+
+//主体内容
+.comDe-con{
+  //轮播图
+  .swiper-container{
+    width: 100%;
+    margin: 0/@px auto;
+     .swiper-slide {
+      text-align: center;
+      font-size: 18/@px;
+      background: #fff;
+       img{
+         width: 100%;
+       }
+    }
+  }
+  //文字描述
+  .textDetail{
+    padding: 40/@px 50/@px;
+    .textDetail-box{
+      display: flex;
+      height: 110/@px;
+      .textDetail-name{
+        font-size: 46/@px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        line-height: 55/@px;
+        width: 80%;
+        color: #515860;
+      }
+      .textDetail-img{
+        padding-left: 55/@px;
+        border-left: 1/@px solid #515860;
+        margin-left: 40/@px;
+        img{
+          width: 77/@px;
+          height: 69/@px;
+          display: block;
+        }
+        span{
+          font-size: 37/@px;
+          margin-top: 8/@px;
+          color: #515860;
+        }
+      }
+    }
+    .money{
+      margin: 30/@px 0 47/@px 0;
+      display: inherit;
+      font-size: 52/@px;
+      color: #c1b480;
+    }
+    .textDetail-text{
+      font-size: 38/@px;
+      color: #61686e;
+      line-height: 48/@px;
+
+    }
+
+  }
+  //视频
+  .video{
+    width: 100%;
+    height: 600/@px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  //精品
+  .boutique{
+    margin: 60/@px 0 30/@px 0;
+    h2{
+      color: #ffffff;
+      font-size: 46/@px;
+      background: #c3b380;
+      text-align: center;
+      padding: 27/@px 0;
+      margin-bottom: 30/@px;
+    }
+    ul{
+      li{
+        height: 280/@px;
+        padding: 20/@px 40/@px;
+        border-top: 1/@px solid #d1d1d1;
+        border-bottom: 1/@px solid #d1d1d1;
+        display: flex;
+        .comm-img{
+          width: 25%;
+          margin-right: 38/@px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .comm-detail{
+          width: 75%;
+          .comm-detail-top{
+            height: 50%;
+            width: 100%;
+            //background: red;
+            display: flex;
+            .cdt-left{
+              width: 80%;
+              p{
+                font-size: 46/@px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
+                line-height: 49/@px;
+                margin-bottom: 14/@px;
+
+              }
+              span{
+                font-size: 44/@px;
+                color: #c3b380;
+
+
+              }
+
+            }
+            .cdt-right{
+              margin-left: 60/@px;
+              img{
+                width: 60/@px;
+                height: 60/@px;
+                display: block;
+              }
+              span{
+                font-size: 30/@px;
+                color: #515860;
+              }
+            }
+          }
+          .comm-detail-bottom{
+            padding-top: 20/@px;
+            height: 50%;
+            width: 100%;
+            //background: blue;
+            p{
+              font-size: 38/@px;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+              overflow: hidden;
+              line-height: 44/@px;
+              color: #61686e;
+            }
+          }
+
+        }
+
+
+      }
+    }
+  }
+}

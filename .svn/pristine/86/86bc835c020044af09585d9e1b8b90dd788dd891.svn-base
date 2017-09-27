@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新品推荐</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/shopRecommend.css">
+</head>
+<body>
+<!--头部-->
+<!--<header>-->
+    <!--<h1>新品推荐</h1>-->
+    <!--<span class="history"></span>-->
+    <!--<i class="choiceTarget"></i>-->
+<!--</header>-->
+<!--主要内容-->
+<div class="box">
+    <!--商品推荐-->
+    <div class="newRecommend">
+        <ul>
+            <li>
+                <div class="shop-img">
+                    <img src="images/shop-img1.png" alt="">
+                </div>
+                <p>商品名称商品名称商品名称商品名称</p>
+                <span>20000.00</span>
+
+            </li>
+            <li>
+                <div class="shop-img">
+                    <img src="images/shop-img1.png" alt="">
+                </div>
+
+                <p>商名称商品名称</p>
+                <span>20000.00</span>
+
+            </li>
+            <li>
+                <div class="shop-img">
+                    <img src="images/shop-img1.png" alt="">
+                </div>
+                <p>商品名称商品名称商品名称商品名称</p>
+                <span>20000.00</span>
+
+            </li>
+            <li>
+                <div class="shop-img">
+                    <img src="images/shop-img1.png" alt="">
+                </div>
+
+                <p>商名称商品名称</p>
+                <span>20000.00</span>
+
+            </li>
+            <li>
+                <div class="shop-img">
+                    <img src="images/shop-img1.png" alt="">
+                </div>
+                <p>商品名称商品名称商品名称商品名称</p>
+                <span>20000.00</span>
+
+            </li>
+            <li>
+                <div class="shop-img">
+                    <img src="images/shop-img1.png" alt="">
+                </div>
+
+                <p>商名称商品名称</p>
+                <span>20000.00</span>
+
+            </li>
+            <li>
+                <div class="shop-img">
+                    <img src="images/shop-img1.png" alt="">
+                </div>
+                <p>商品名称商品名称商品名称商品名称</p>
+                <span>20000.00</span>
+
+            </li>
+            <li>
+                <div class="shop-img">
+                    <img src="images/shop-img1.png" alt="">
+                </div>
+
+                <p>商名称商品名称</p>
+                <span>20000.00</span>
+
+            </li>
+            <li>
+                <div class="shop-img">
+                    <img src="images/shop-img1.png" alt="">
+                </div>
+                <p>商品名称商品名称商品名称商品名称</p>
+                <span>20000.00</span>
+
+            </li>
+            <li>
+                <div class="shop-img">
+                    <img src="images/shop-img1.png" alt="">
+                </div>
+
+                <p>商名称商品名称</p>
+                <span>20000.00</span>
+
+            </li>
+            <li>
+                <div class="shop-img">
+                    <img src="images/shop-img1.png" alt="">
+                </div>
+                <p>商品名称商品名称商品名称商品名称</p>
+                <span>20000.00</span>
+
+            </li>
+            <li>
+                <div class="shop-img">
+                    <img src="images/shop-img1.png" alt="">
+                </div>
+
+                <p>商名称商品名称</p>
+                <span>20000.00</span>
+
+            </li>
+        </ul>
+    </div>
+    <!--页面加载中-->
+    <div class="loader">
+        <span>页面加载中
+        <i></i></span>
+
+    </div>
+</div>
+
+
+<!--筛选层-->
+<div class="choice">
+    <div class="header">
+        <h1>筛选</h1>
+        <span class="close"></span>
+        <i class="goals"></i>
+    </div>
+    <ul class="choice-ul">
+        <li>
+            <span class="choice-target">选择形状 <i></i></span>
+            <ol class="choice-ul-ol none">
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+            </ol>
+        </li>
+        <li>
+            <span class="choice-target">选择形状 <i></i></span>
+            <ol class="choice-ul-ol none">
+                <li>22</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+            </ol>
+        </li>
+        <li>
+            <span class="choice-target">选择形状 <i></i></span>
+            <ol class="choice-ul-ol none">
+                <li>33</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+            </ol>
+        </li>
+        <li>
+            <span class="choice-target">选择形状 <i></i></span>
+            <ol class="choice-ul-ol none">
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+                <li>名称</li>
+            </ol>
+        </li>
+    </ul>
+
+</div>
+
+
+
+<!--引入js文件-->
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/shopRecommend.js"></script>
+</body>
+</html>

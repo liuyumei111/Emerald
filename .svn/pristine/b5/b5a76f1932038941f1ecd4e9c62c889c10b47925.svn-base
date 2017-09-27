@@ -1,0 +1,91 @@
+html,
+body {
+  background: #fff;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: 46.875px;
+  background: #fff;
+  border-bottom: 1px solid #d1d1d1;
+}
+header > span {
+  width: 27.77777778px;
+  height: 20.83333333px;
+  background: url("../images/fanhui.png") no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  position: absolute;
+  top: 12.15277778px;
+  left: 13.88888889px;
+}
+.sC-box .sC-box-ul {
+  position: relative;
+  z-index: 5;
+}
+.sC-box .sC-box-ul > li .li-target {
+  line-height: 52.08333333px;
+  width: 30%;
+  background: #eeeeee;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 1px solid #bcbcbc;
+  position: relative;
+  font-size: 14.58333333px;
+  color: #525961;
+}
+.sC-box .sC-box-ul > li .li-target .i-active {
+  width: 8.68055556px;
+  height: 8.68055556px;
+  border-top: 1px solid #525961;
+  border-right: 1px solid #525961;
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  right: 6.94444444px;
+  transform: rotate(45deg);
+}
+.sC-box .sC-box-ul > li .li-active {
+  background: #fff;
+  border-bottom: none;
+  color: #c1b480;
+}
+.sC-box .sC-box-ul > li > .sC-box-ul-ol {
+  background: #fff;
+  padding: 3%;
+  width: 70%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sC-box .sC-box-ul > li > .sC-box-ul-ol > li {
+  width: 31%;
+  line-height: 34.72222222px;
+  margin-right: 3%;
+  margin-bottom: 3%;
+  background: #eeeeee;
+  text-align: center;
+  color: #b1b2b4;
+  font-size: 11.80555556px;
+}
+.sC-box .sC-box-ul > li > .sC-box-ul-ol > li:nth-child(3n+0) {
+  margin-right: 0%;
+}
+.sC-box .sC-box-ul > li > .sC-box-ul-ol .bac-color {
+  background: #c3b380;
+  color: #fbfaf6;
+}
+.sC-box .sC-box-ul > li .none {
+  display: none;
+}
+.sC-box #ul-back {
+  height: 100%;
+  width: 30%;
+  position: absolute;
+  top: 45.13888889px;
+  left: 0;
+  background: #eeeeee;
+  z-index: 1;
+}
