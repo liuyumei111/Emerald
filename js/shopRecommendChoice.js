@@ -1,9 +1,3 @@
-
-/*后退一步*/
-$('.history').click(function () {
-    history.go(-1);
-});
-
 //获取到参数
 var shapeId = locationSearcher('shapeId');
 var areaId = locationSearcher('areaId');

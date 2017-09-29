@@ -1,10 +1,4 @@
 (function () {
-
-    //后退一步
-    $('.history').click(function () {
-        history.go(-1);
-    });
-
     //用模板编译数据
     var sCBoxTpl=$('#sC-box').html();
     var sCBoxCmp=Handlebars.compile(sCBoxTpl);

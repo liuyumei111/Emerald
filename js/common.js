@@ -1,3 +1,12 @@
+
+/*后退一步*/
+$('.history').click(function () {
+    history.go(-1);
+});
+
+
+
+
 //类别下拉控制方法
 $.fn.toggleList = function (flag) {
     var oLis = $(this).find("a");

@@ -1,9 +1,4 @@
 (function () {
-    /*后退一步*/
-    $('.history').click(function () {
-        history.go(-1);
-    });
-
     //1.类别id  2.搜索关键字
     var categoryId = locationSearcher('categoryId');
     var name = decodeURI(locationSearcher('name'));

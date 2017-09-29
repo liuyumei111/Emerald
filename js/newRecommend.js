@@ -1,9 +1,4 @@
 (function () {
-    /*后退一步*/
-    $('.history').click(function () {
-        history.go(-1);
-    });
-
     //点开筛选层
     $('.choiceTarget').click(function () {
        $('.choice').css('display','block');
