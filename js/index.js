@@ -53,7 +53,9 @@
                         zhanKai.find('img').attr('src','images/hide.png');
                         zhanKai.find('span').html('展开')
                     }
-                })
+                });
+
+
             }else if(data.errorCode==0){
             //    跳转到登录页面
             }else{
@@ -65,9 +67,5 @@
             alert('服务器异常')
         }
     })
-
-
-
-
 
 })();

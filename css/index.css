@@ -52,20 +52,21 @@ header a {
   display: flex;
   flex-wrap: wrap;
 }
-.box .category .category-ol li {
+.box .category .category-ol > a {
   width: 20%;
   height: 62.5px;
   margin-top: 10.41666667px;
   text-align: center;
+  color: #52585f;
 }
-.box .category .category-ol li img {
+.box .category .category-ol > a img {
   width: 41.66666667px;
   height: 41.66666667px;
   display: block;
   margin-left: 20%;
   margin-bottom: 4.16666667px;
 }
-.box .category .category-ol li span {
+.box .category .category-ol > a span {
   font-size: 12.5px;
 }
 .box .category .none {

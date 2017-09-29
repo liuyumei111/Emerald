@@ -1,31 +1,32 @@
-@px:2.88px;
-html,body{
+@px: 2.88px;
+html, body {
   background: #fff;
 }
+
 //头部
-header{
+header {
   width: 100%;
-  line-height:132/@px;
+  line-height: 132/@px;
   position: relative;
-  h1{
+  h1 {
     text-align: center;
     font-size: 54/@px;
     color: #c3b380;
   }
-  span{
+  span {
     width: 60/@px;
     height: 76/@px;
-    background: url("../images/user1.png")no-repeat;
+    background: url("../images/user1.png") no-repeat;
     background-size: 100% 100%;
     display: inline-block;
     position: absolute;
     top: 30/@px;
     left: 40/@px;
   }
-  a{
+  a {
     width: 68/@px;
     height: 70/@px;
-    background: url("../images/user2.png")no-repeat;
+    background: url("../images/user2.png") no-repeat;
     background-size: 100% 100%;
     display: inline-block;
     position: absolute;
@@ -36,9 +37,9 @@ header{
 }
 
 //主要内容
-.box{
+.box {
   //轮播图
-  .swiper-container{
+  .swiper-container {
     width: 100%;
     //height: 600/@px;
     margin: 0/@px auto;
@@ -46,54 +47,55 @@ header{
       text-align: center;
       font-size: 18/@px;
       background: #fff;
-      img{
+      img {
         width: 100%;
         height: 100%;
       }
     }
   }
   //类别列表
-  .category{
+  .category {
     width: 100%;
-    .category-ol{
+    .category-ol {
       display: flex;
       flex-wrap: wrap;
-      li{
+      >a {
         width: 20%;
         height: 180/@px;
         margin-top: 30/@px;
         //margin-left: 30/@px;
         text-align: center;
-        img{
+        color: #52585f;
+        img {
           width: 120/@px;
           height: 120/@px;
           display: block;
           margin-left: 20%;
           margin-bottom: 12/@px;
         }
-        span{
+        span {
           font-size: 36/@px;
         }
       }
     }
-    .none{
+    .none {
       display: none;
     }
-    .block{
+    .block {
       display: block;
     }
   }
   // <!--新品推荐-->
-  .newRecommend{
+  .newRecommend {
     margin-top: 35/@px;
-    .newRecommend-hea{
+    .newRecommend-hea {
       height: 76/@px;
       background: #c3b380;
-      .newRecommendHea-box{
+      .newRecommendHea-box {
         margin-left: 30/@px;
         background: #f0f0f0;
         height: 100%;
-        span{
+        span {
           font-size: 34/@px;
           color: #c3b37f;
           text-align: left;
@@ -101,7 +103,7 @@ header{
           margin-left: 22/@px;
           display: inline-block;
         }
-        a{
+        a {
           color: #6c6459;
           float: right;
           font-size: 34/@px;
@@ -110,58 +112,57 @@ header{
         }
       }
     }
-    ul{
-      padding:0 40/@px;
+    ul {
+      padding: 0 40/@px;
       display: flex;
       flex-wrap: wrap;
-      a{
+      a {
         width: 48%;
         margin-top: 30/@px;
-        li{
-          .shop-img{
+        li {
+          .shop-img {
             width: 100%;
             height: 402/@px;
-            img{
+            img {
               width: 100%;
               height: 100%;
             }
           }
-          p{
+          p {
             font-size: 38/@px;
             line-height: 46/@px;
             margin-top: 20/@px;
             margin-bottom: 15/@px;
             color: #52585f;
           }
-          span{
+          span {
             font-size: 40/@px;
             color: #c2b380;
           }
         }
       }
-      a:nth-child(odd){
+      a:nth-child(odd) {
         margin-right: 4%;
       }
 
-
     }
   }
-//   <!--页面加载中-->
-  .loader{
+  //   <!--页面加载中-->
+  .loader {
     width: 100%;
     height: 76/@px;
     background: #f0f0f0;
     text-align: center;
-    span{
+    span {
       font-size: 34/@px;
       color: #868686;
       margin-top: 20/@px;
       display: inline-block;
       position: relative;
-      i{
+      i {
         width: 32/@px;
         height: 32/@px;
-        background: url("../images/loader.png")no-repeat;
+        background: url("../images/loader.png") no-repeat;
         display: inline-block;
         background-size: cover;
         position: absolute;

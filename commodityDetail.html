@@ -37,10 +37,21 @@
         <div class="textDetail">
             <div class="textDetail-box">
                 <p class="textDetail-name">{{name}}</p>
+
+                {{#valueCompare isStore '===' '001'}}
+                    <div class="textDetail-img shoucang textDetail-img-active">
+                        <i class="imgBanner"></i>
+                        <span>取消</span>
+                    </div>
+                {{/valueCompare}}
+
+                {{#valueCompare isStore '===' '002'}}
                 <div class="textDetail-img shoucang">
                     <i class="imgBanner"></i>
                     <span>收藏</span>
                 </div>
+                {{/valueCompare}}
+
             </div>
             <span class="money">￥{{price}}</span>
             <p class="textDetail-text">{{content}}</p>
@@ -71,10 +82,18 @@
                                     <p>{{name}}</p>
                                     <span>{{price}}</span>
                                 </div>
+                                {{#valueCompare isStore '===' '002'}}
                                 <div class="cdt-right shoucang-jp">
                                     <i class="img"></i>
                                     <span>收藏</span>
                                 </div>
+                                {{/valueCompare}}
+                                {{#valueCompare isStore '===' '001'}}
+                                <div class="cdt-right shoucang-jp cdt-right-active">
+                                    <i class="img"></i>
+                                    <span>取消</span>
+                                </div>
+                                {{/valueCompare}}
                             </div>
                             <div class="comm-detail-bottom">
                                 <p>{{content}}</p>

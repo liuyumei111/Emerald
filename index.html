@@ -35,15 +35,19 @@
         <div class="category">
             <ol class="category-ol">
                 {{#each categorys}}
+                <a href="searchShop.html?categoryId={{id}}">
                 <li>
                     <img src='images/jiazai.png' data-original={{image}} class="lazy" alt="">
                     <span>{{name}}</span>
                 </li>
+                </a>
                 {{/each}}
-                <li class="category-hide">
+                <a href="javascript:;" class="category-hide">
+                <li>
                     <img src="images/hide.png" alt="">
                     <span>展开</span>
                 </li>
+                </a>
             </ol>
         </div>
         <!--新品推荐-->
@@ -80,12 +84,12 @@
                 {{#each products}}
                 <a href="commodityDetail.html?productId={{id}}">
                     <li>
-                    <div class="shop-img">
-                        <img src='images/jiazai.png' data-original={{mainImage}} class="lazy" alt="">
-                    </div>
-                    <p>{{name}}</p>
-                    <span>{{price}}</span>
-                </li>
+                        <div class="shop-img">
+                            <img src='images/jiazai.png' data-original={{mainImage}} class="lazy" alt="">
+                        </div>
+                        <p>{{name}}</p>
+                        <span>{{price}}</span>
+                    </li>
                 </a>
                 {{/each}}
             </ul>
@@ -105,6 +109,5 @@
 <script src="js/handlebars-v4.0.10.js"></script>
 <script src="js/common.js"></script>
 <script src="js/index.js"></script>
-
 </body>
 </html>

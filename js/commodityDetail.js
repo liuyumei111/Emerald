@@ -1,7 +1,7 @@
 (function () {
 
-//获取到商品唯一标记
-var productId=locationSearcher('productId');
+    //获取到商品唯一标记
+    var productId=locationSearcher('productId');
     console.log(productId);
     //编译详情页数据
    var comDeConTpl=$('#comDe-con').html();
@@ -13,7 +13,8 @@ var productId=locationSearcher('productId');
         type:'POST',
         dataType:'json',
         data:{
-            productId:productId
+            productId:productId,
+            token:'201709241132286040c30df2af7a8a4a70bc9d8eb1d5ad1eaa'
         },
         success:function (data) {
             if(data.errorCode==200){
@@ -24,7 +25,6 @@ var productId=locationSearcher('productId');
                 $(function() {
                     $("img.lazy").lazyload()
                 });
-
 
                 //轮播图组件
                 var swiper = new Swiper('.swiper-container', {
@@ -40,122 +40,76 @@ var productId=locationSearcher('productId');
                     $(this).removeClass('.i-active')
                 });
 
-                //    点击轮播图收藏ajax
-                $('.shoucang').click(function () {
-                    var _this=$(this);
-                 if(_this.hasClass('textDetail-img-active')){
-                     // _this.removeClass('textDetail-img-active')
-                     //取消收藏
-                     $.ajax({
-                         url:C.interface.cancelStore,
-                         type:'POST',
-                         dataType:'json',
-                         data:{
-                             token:C.marketToken,
-                             productId:productId
-                         },
-                         success:function (data) {
-                             if(data.errorCode==200){
-                                 _this.removeClass('textDetail-img-active')
+                //轮播图下面  收藏/取消收藏
+                $('.shoucang').unbind().click(getShoucangStatus);
 
-                             }else if(data.errorCode==0){
-                                 //    跳转到登录页面
-                             }else{
-                                 alert(data.errorMsg)
-                             }
-                         },
-                         error:function () {
-                             alert('服务器异常')
-                         }
+                //轮播图下面  收藏/取消收藏
+                function getShoucangStatus() {
+                    var that = $(this);
+                    $.ajax({
+                    url:C.interface.toggleStore,
+                    type:'POST',
+                    dataType:'json',
+                    data:{
+                        token:C.token,
+                        productId:productId
+                    },
+                    success:function (response) {
+                        if(response.errorCode == '200'){
+                            var data=response.data;
+                            that.addClass('textDetail-img-active');
+                            that.find('span').html('取消');
+                            if(data=='002'){
+                                that.removeClass('textDetail-img-active');
+                                that.find('span').html('收藏');
+                            }
 
-                     });
-                 }else {
-                     // _this.addClass('textDetail-img-active')
-                     //收藏
-                     $.ajax({
-                         url:C.interface.addStore,
-                         type:'POST',
-                         dataType:'json',
-                         data:{
-                             token:C.marketToken,
-                             productId:productId
-                         },
-                         success:function (data) {
-                             if(data.errorCode==200){
-                                 _this.addClass('textDetail-img-active')
-
-                             }else if(data.errorCode==0){
-                                 //    跳转到登录页面
-                             }else{
-                                 alert(data.errorMsg)
-                             }
-                         },
-                         error:function () {
-                             alert('服务器异常')
-                         }
-
-                     });
-                 }
-
+                        }else if(response.errorCode == '0'){
+                            //    跳转到登录页面
+                        }else{
+                            alert(response.errorMsg);
+                        }
+                    },
+                    error:function () {
+                        alert('服务器异常')
+                    }
                 });
+            }
 
-                //    点击精品收藏ajax
-                $('.shoucang-jp').click(function () {
-                    var _this=$(this);
-                   var id=_this.parent().parent().parent().attr('data-id');
-                   if(_this.hasClass('cdt-right-active')){
-                       //取消收藏
-                       // _this.removeClass('cdt-right-active')
-                       $.ajax({
-                           url:C.interface.cancelStore,
-                           type:'POST',
-                           dataType:'json',
-                           data:{
-                               token:C.marketToken,
-                               productId:id
-                           },
-                           success:function (data) {
-                               if(data.errorCode==200){
-                                   _this.removeClass('cdt-right-active')
+                // // 新品推荐  收藏/取消收藏
+                $('.cdt-right').click(function (e) {
+                    var that=$(this)
+                    e.stopPropagation();
+                    e.preventDefault();
+                    var id=that.parent().parent().parent().attr('data-id');
+                    $.ajax({
+                        url:C.interface.toggleStore,
+                        type:'POST',
+                        dataType:'json',
+                        data:{
+                            token:C.token,
+                            productId:id
+                        },
+                        success:function (response) {
+                            if(response.errorCode == '200'){
+                                var data=response.data;
+                                that.addClass('cdt-right-active');
+                                that.find('span').html('取消');
+                                if(data=='002'){
+                                    that.removeClass('cdt-right-active');
+                                    that.find('span').html('收藏');
+                                }
 
-                               }else if(data.errorCode==0){
-                                   //    跳转到登录页面
-                               }else{
-                                   alert(data.errorMsg)
-                               }
-                           },
-                           error:function () {
-                               alert('服务器异常')
-                           }
-
-                       });
-                   }else {
-                       //收藏
-                       // _this.addClass('cdt-right-active')
-                       $.ajax({
-                           url:C.interface.addStore,
-                           type:'POST',
-                           dataType:'json',
-                           data:{
-                               token:C.marketToken,
-                               productId:id
-                           },
-                           success:function (data) {
-                               if(data.errorCode==200){
-                                   _this.addClass('cdt-right-active')
-
-                               }else if(data.errorCode==0){
-                                   //    跳转到登录页面
-                               }else{
-                                   alert(data.errorMsg)
-                               }
-                           },
-                           error:function () {
-                               alert('服务器异常')
-                           }
-
-                       });
-                   }
+                            }else if(response.errorCode == '0'){
+                                //    跳转到登录页面
+                            }else{
+                                alert(response.errorMsg);
+                            }
+                        },
+                        error:function () {
+                            alert('服务器异常')
+                        }
+                    });
                 });
 
             }else if(data.errorCode==0){

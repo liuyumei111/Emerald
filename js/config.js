@@ -21,6 +21,8 @@
     //获取微信oppenId
     C.getWxUserInfo = 'http://www.rrfun.com.cn/Uc/getInfo';
 
+    //token
+    C.token = '201709241132286040c30df2af7a8a4a70bc9d8eb1d5ad1eaa';
     //mall接口
     C.interface = {
         //登录
@@ -30,9 +32,9 @@
         // 详情页
         detail: 'product/detail',
         //收藏
-        addStore: 'product/addStore',
-        //取消收藏
-        cancelStore:'product/cancelStore',
+        toggleStore: 'product/toggleStore',
+        // //取消收藏
+        // cancelStore:'product/cancelStore',
         //新品推荐
         newMore: 'product/newMore',
         //商品推荐
