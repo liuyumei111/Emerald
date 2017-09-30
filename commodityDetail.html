@@ -13,7 +13,8 @@
 
 <!--头部-->
 <header>
-    <span>商品详情</span>
+    <h1>商品详情</h1>
+    <span class="history"></span>
 </header>
 
 <!--内容-->
@@ -82,18 +83,21 @@
                                     <p>{{name}}</p>
                                     <span>{{price}}</span>
                                 </div>
+
                                 {{#valueCompare isStore '===' '002'}}
                                 <div class="cdt-right shoucang-jp">
                                     <i class="img"></i>
                                     <span>收藏</span>
                                 </div>
                                 {{/valueCompare}}
+
                                 {{#valueCompare isStore '===' '001'}}
                                 <div class="cdt-right shoucang-jp cdt-right-active">
                                     <i class="img"></i>
                                     <span>取消</span>
                                 </div>
                                 {{/valueCompare}}
+
                             </div>
                             <div class="comm-detail-bottom">
                                 <p>{{content}}</p>

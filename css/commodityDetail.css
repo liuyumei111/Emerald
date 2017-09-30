@@ -3,12 +3,24 @@ body {
 }
 header {
   width: 100%;
-  line-height: 31.25px;
+  line-height: 45.83333333px;
+  position: relative;
+  border-bottom: 1px solid #d1d1d1;
+}
+header h1 {
   text-align: center;
+  font-size: 18.75px;
+  color: #52585f;
 }
 header span {
-  color: #51585f;
-  font-size: 15.97222222px;
+  width: 27.77777778px;
+  height: 20.83333333px;
+  background: url("../images/fanhui.png") no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  position: absolute;
+  top: 13.88888889px;
+  left: 13.88888889px;
 }
 .comDe-con .swiper-container {
   width: 100%;

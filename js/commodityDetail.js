@@ -1,5 +1,4 @@
 (function () {
-
     //获取到商品唯一标记
     var productId=locationSearcher('productId');
     console.log(productId);
@@ -14,7 +13,7 @@
         dataType:'json',
         data:{
             productId:productId,
-            token:'201709241132286040c30df2af7a8a4a70bc9d8eb1d5ad1eaa'
+            token:C.token
         },
         success:function (data) {
             if(data.errorCode==200){
@@ -56,9 +55,11 @@
                     },
                     success:function (response) {
                         if(response.errorCode == '200'){
+                            //显示'取消收藏'状态
                             var data=response.data;
                             that.addClass('textDetail-img-active');
                             that.find('span').html('取消');
+                            //显示'收藏'状态
                             if(data=='002'){
                                 that.removeClass('textDetail-img-active');
                                 that.find('span').html('收藏');
@@ -77,8 +78,8 @@
             }
 
                 // // 新品推荐  收藏/取消收藏
-                $('.cdt-right').click(function (e) {
-                    var that=$(this)
+                $('.cdt-right').unbind().click(function (e) {
+                    var that=$(this);
                     e.stopPropagation();
                     e.preventDefault();
                     var id=that.parent().parent().parent().attr('data-id');
@@ -93,13 +94,14 @@
                         success:function (response) {
                             if(response.errorCode == '200'){
                                 var data=response.data;
+                                //显示'取消收藏'状态
                                 that.addClass('cdt-right-active');
                                 that.find('span').html('取消');
+                                //显示'收藏'状态
                                 if(data=='002'){
                                     that.removeClass('cdt-right-active');
                                     that.find('span').html('收藏');
                                 }
-
                             }else if(response.errorCode == '0'){
                                 //    跳转到登录页面
                             }else{
@@ -113,7 +115,25 @@
                 });
 
             }else if(data.errorCode==0){
-                //    跳转到登录页面
+                var data='';
+                var ua = navigator.userAgent.toLowerCase();  //浏览器类型
+                if (/iphone|ipad|ipod/.test(ua)) {
+//            alert('这是ios机型');
+                    //店铺分享拉取iOS分享
+                    iosTokenOut(data);
+                } else {
+//            alert('这是android机型');
+                    //店铺分享拉取安卓分享   注意：安卓的数据类型比较特殊要字符串的
+                    androidTokenOut(JSON.stringify(data));
+                }
+                //店铺分享拉取安卓分享
+                function androidTokenOut(param) {
+                    window.huifa.tokenOut(param);     //tokenOut这个方法是和原生共同协调好一起定义的
+                }
+                //店铺分享拉取iOS分享
+                function iosTokenOut(param) {
+                    window.webkit.messageHandlers.tokenOut.postMessage(param);     //tokenOut这个方法是和原生共同协调好一起定义的
+                }
             }else{
                 alert(data.errorMsg)
             }

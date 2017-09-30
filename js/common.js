@@ -5,9 +5,8 @@ $('.history').click(function () {
 });
 
 
-
-
 //类别下拉控制方法
+//在jquery的公共方法中库中定义了一个toggleList方法:这个方法每个jquery的实例都可以访问
 $.fn.toggleList = function (flag) {
     var oLis = $(this).find("a");
     var endIndex = oLis.size()-1;
@@ -39,7 +38,6 @@ function locationSearcher(key) {
 }
 
 
-
 //分离以逗号隔开的Json数据
 Handlebars.registerHelper('splitDetailImg',function (value) {
     var splitvalue=value.split(',');
@@ -55,15 +53,6 @@ Handlebars.registerHelper('splitDetailImg',function (value) {
 
 });
 
-
-//服务器返回两种状态001和002，001代表一个状态，002代表一个状态
-Handlebars.registerHelper('collection',function (value) {
-    if (value=="001"){
-        return '取消';
-    }else if (value=="002"){
-        return '收藏';
-    }
-});
 
 //判断value的状态，渲染不同的数据
 Handlebars.registerHelper('valueCompare', function(left, operator, right, options) {
