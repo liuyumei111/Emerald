@@ -100,7 +100,7 @@
             if(data.errorCode==200){
                 // var data=data.data;
                 console.log(data);
-                $('.choice').html(choiceCmp(data))
+                $('.choice').html(choiceCmp(data));
 
                 //展开二级菜单
                 $('.choice-target').click(function () {
@@ -148,7 +148,7 @@
                 });
 
             }else if(data.errorCode==0){
-                //    跳转到登录页面
+                //    token过期，跳转到登录页面
             }else{
                 alert(data.errorMsg)
             }

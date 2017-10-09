@@ -71,8 +71,6 @@
                             $("img.lazy").lazyload()
                         });
                     } else {
-                        // $(".no-info").removeClass('loader-none');
-                        // num = maxnum + 1;
                         $(".no-info").show();
                         $(".loader").hide();
                         num = maxnum + 1;
@@ -102,7 +100,7 @@
             if(data.errorCode==200){
                 // var data=data.data;
                 console.log(data);
-                $('.choice').html(choiceCmp(data))
+                $('.choice').html(choiceCmp(data));
 
                 //展开二级菜单
                 $('.choice-target').click(function () {

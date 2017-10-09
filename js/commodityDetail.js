@@ -66,7 +66,26 @@
                             }
 
                         }else if(response.errorCode == '0'){
-                            //    跳转到登录页面
+                            //Token 过期的情况下,调取原生的方法到登录页面
+                            var data='';
+                            var ua = navigator.userAgent.toLowerCase();  //浏览器类型
+                            if (/iphone|ipad|ipod/.test(ua)) {
+                                //alert('这是ios机型');
+                                //token过期调取ios的方法
+                                iosTokenOut(data);
+                            } else {
+                                //alert('这是android机型');
+                                //token过期调取安卓的方法   注意：安卓的数据类型比较特殊要字符串的
+                                androidTokenOut(JSON.stringify(data));
+                            }
+                            //调取安卓的方法
+                            function androidTokenOut(param) {
+                                window.huifa.tokenOut(param);     //tokenOut这个方法是和原生共同协调好一起定义的
+                            }
+                            //调取iOS的方法
+                            function iosTokenOut(param) {
+                                window.webkit.messageHandlers.tokenOut.postMessage(param);     //tokenOut这个方法是和原生共同协调好一起定义的
+                            }
                         }else{
                             alert(response.errorMsg);
                         }
@@ -103,7 +122,26 @@
                                     that.find('span').html('收藏');
                                 }
                             }else if(response.errorCode == '0'){
-                                //    跳转到登录页面
+                                //Token 过期的情况下,调取原生的方法到登录页面
+                                var data='';
+                                var ua = navigator.userAgent.toLowerCase();  //浏览器类型
+                                if (/iphone|ipad|ipod/.test(ua)) {
+                                    //alert('这是ios机型');
+                                    //token过期调取ios的方法
+                                    iosTokenOut(data);
+                                } else {
+                                    //alert('这是android机型');
+                                    //token过期调取安卓的方法   注意：安卓的数据类型比较特殊要字符串的
+                                    androidTokenOut(JSON.stringify(data));
+                                }
+                                //调取安卓的方法
+                                function androidTokenOut(param) {
+                                    window.huifa.tokenOut(param);     //tokenOut这个方法是和原生共同协调好一起定义的
+                                }
+                                //调取iOS的方法
+                                function iosTokenOut(param) {
+                                    window.webkit.messageHandlers.tokenOut.postMessage(param);     //tokenOut这个方法是和原生共同协调好一起定义的
+                                }
                             }else{
                                 alert(response.errorMsg);
                             }
@@ -115,22 +153,23 @@
                 });
 
             }else if(data.errorCode==0){
+                //Token 过期的情况下,调取原生的方法到登录页面
                 var data='';
                 var ua = navigator.userAgent.toLowerCase();  //浏览器类型
                 if (/iphone|ipad|ipod/.test(ua)) {
-//            alert('这是ios机型');
-                    //店铺分享拉取iOS分享
+                    //alert('这是ios机型');
+                    //token过期调取ios的方法
                     iosTokenOut(data);
                 } else {
-//            alert('这是android机型');
-                    //店铺分享拉取安卓分享   注意：安卓的数据类型比较特殊要字符串的
+                    //alert('这是android机型');
+                    //token过期调取安卓的方法   注意：安卓的数据类型比较特殊要字符串的
                     androidTokenOut(JSON.stringify(data));
                 }
-                //店铺分享拉取安卓分享
+                //调取安卓的方法
                 function androidTokenOut(param) {
                     window.huifa.tokenOut(param);     //tokenOut这个方法是和原生共同协调好一起定义的
                 }
-                //店铺分享拉取iOS分享
+                //调取iOS的方法
                 function iosTokenOut(param) {
                     window.webkit.messageHandlers.tokenOut.postMessage(param);     //tokenOut这个方法是和原生共同协调好一起定义的
                 }

@@ -36,7 +36,7 @@
                  })
 
              }else if(data.errorCode==0){
-                 //    跳转到登录页面
+                 //    token过期,跳转到登录页面
              }else{
                  alert(data.errorMsg)
              }

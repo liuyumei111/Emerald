@@ -67,15 +67,13 @@ function choiceBoxData() {
                         $("img.lazy").lazyload()
                     });
                 } else {
-                    // $(".no-info").removeClass('loader-none');
-                    // num = maxnum + 1;
                     $(".no-info").show();
                     $(".loader").hide();
                     num = maxnum + 1;
                 }
                 flag = 0;
             }else if(data.errorCode==0){
-                //    跳转到登录页面
+                //    token过期,跳转到登录页面
             }else{
                 alert(data.errorMsg)
             }
