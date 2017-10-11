@@ -5,6 +5,40 @@
     // 1.将token写到本地存储中
     localStorage.setItem('token',tokenData);
 
+    //点击用户头像
+    $('.user').unbind().bind('click',function (event) {
+        console.log('点击了首页左侧头像');
+        //        阻止冒泡事件
+        event.stopPropagation();
+        // 去除默认事件
+        event.preventDefault();
+        //给安卓或是ios传过去的数据,如果这里的数据是要通过ajax请求过来的就正常发送请求,在请求成功后判断进行下面的操作
+        var data='';
+        var ua = navigator.userAgent.toLowerCase();  //浏览器类型
+        if (/iphone|ipad|ipod/.test(ua)) {
+            // alert('这是ios机型');
+            //点击首页左侧头像iOS跳转
+            iosClickUser(data);
+        } else {
+            // alert('这是android机型');
+            //点击首页左侧头像安卓跳转   注意：安卓的数据类型比较特殊要字符串的
+            androidClickUser(JSON.stringify(data));
+        }
+    });
+    //点击首页左侧头像安卓跳转
+    function androidClickUser(param) {
+        window.huifa.clickUser(param);     //clickUser这个方法是和原生共同协调好一起定义的
+    }
+
+    //点击首页左侧头像ios跳转
+    function iosClickUser(param) {
+        window.webkit.messageHandlers.clickUser.postMessage(param);     //clickUser这个方法是和原生共同协调好一起定义的
+    }
+
+
+
+
+
     //编译首页数据
     var indexBoxTpl= $('#index-box').html();
     var indexBoxCmp=Handlebars.compile(indexBoxTpl);
@@ -59,7 +93,5 @@
         }
     });
 
+
 })();
-
-
-

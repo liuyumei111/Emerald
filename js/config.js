@@ -18,11 +18,12 @@
 
     //1.写死token
     // C.token = '201709241132286040c30df2af7a8a4a70bc9d8eb1d5ad1eaa';
+    C.token = '';
 
     // 2.从本地存储中取出token
-    C.token=localStorage.getItem('token');
+    // C.token=localStorage.getItem('token');
 
-    //mall接口
+    //翡翠app接口
     C.interface = {
         //登录
         login: 'login/in',
@@ -49,7 +50,7 @@
     };
 
 
-    //商城合mall接口地址
+    //翡翠app组合地址
     for (k in C.interface) {
         C.interface[k] = C.host + C.interface[k];
     }
