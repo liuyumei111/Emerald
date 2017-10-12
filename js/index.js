@@ -16,7 +16,7 @@
         var data='';
         var ua = navigator.userAgent.toLowerCase();  //浏览器类型
         if (/iphone|ipad|ipod/.test(ua)) {
-            // alert('这是ios机型');
+            alert('这是ios机型1');
             //点击首页左侧头像iOS跳转
             iosClickUser(data);
         } else {
@@ -32,6 +32,7 @@
 
     //点击首页左侧头像ios跳转
     function iosClickUser(param) {
+        alert('这是ios机型2');
         window.webkit.messageHandlers.clickUser.postMessage(param);     //clickUser这个方法是和原生共同协调好一起定义的
     }
 

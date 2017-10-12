@@ -38,8 +38,6 @@
                     var that=$(this);
                     that.removeClass('i-active');
                     $('#video').get(0).play();
-                    alert(1)
-
                 });
 
                 //轮播图下面  收藏/取消收藏
