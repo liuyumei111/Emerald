@@ -1,10 +1,15 @@
 //视频播放
 function clickVideo(type) {
-    alert('1');
+    // alert('1');
     var that = $(type);
     console.log(that);
     that.removeClass('i-active');
     that.siblings('video').get(0).play();
+    //暂停
+    that.siblings('video').bind('pause', function () {
+        that.addClass('i-active');
+    });
+    //播放完毕
     that.siblings('video').bind('ended', function () {
         that.addClass('i-active');
     });

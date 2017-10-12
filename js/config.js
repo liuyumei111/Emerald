@@ -4,8 +4,10 @@
  */
 
 (function (w) {
-    var apiHost = 'http://192.168.199.124:8085';
-    // var apiHost='http://192.168.199.107:8080';
+    //本地服务器
+    // var apiHost = 'http://192.168.199.124:8085';
+    //线上服务器
+    var apiHost='http://118.190.49.105:8083';
 
     //配置项
     w.C = {};
@@ -16,12 +18,13 @@
     // localStorage.setItem('token','201709181509405117a680d79b7f3f4bfc9c0b497395b511bb');
     // C.marketToken=localStorage.getItem('token');
 
-    //1.写死token
-    C.token = '2017101214114165633f80c84580ce4061bde46301f80b0974';
-    // C.token = '';
+    //1.写死token-本地
+    // C.token = '2017101214114165633f80c84580ce4061bde46301f80b0974';
+    //1.写死token-外网
+    // C.token = '2017101216485723707fa040c50ce548df9cc4d2468f0228fa';
 
     // 2.从本地存储中取出token
-    // C.token=localStorage.getItem('token');
+    C.token=localStorage.getItem('token');
 
     //翡翠app接口
     C.interface = {
