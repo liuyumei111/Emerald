@@ -17,11 +17,11 @@
     // C.marketToken=localStorage.getItem('token');
 
     //1.写死token
-    // C.token = '2017101214114165633f80c84580ce4061bde46301f80b0974';
+    C.token = '2017101214114165633f80c84580ce4061bde46301f80b0974';
     // C.token = '';
 
     // 2.从本地存储中取出token
-    C.token=localStorage.getItem('token');
+    // C.token=localStorage.getItem('token');
 
     //翡翠app接口
     C.interface = {

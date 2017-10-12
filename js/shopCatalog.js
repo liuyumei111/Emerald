@@ -11,6 +11,9 @@
              if(data.errorCode==200){
                  console.log(data);
                  $('.sC-box').html(sCBoxCmp(data));
+                 //设置左侧背景颜色高度
+                 $('.sC-box-ul-bg').css('height',$(document).height());
+
                  var leftList=$('.leftList');
                  //1.第一个左侧的li状态选中 2.去掉箭头 3.显示第一个右侧的内容
                  leftList.eq(0).addClass('li-active');
