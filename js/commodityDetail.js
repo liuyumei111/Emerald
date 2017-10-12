@@ -51,17 +51,6 @@ function clickVideo(type) {
                     paginationType: 'fraction'
                 });
 
-                //    点击视频播放按钮播放视频
-                //     $(document).on('click','.video-play', function() {
-                //         var that=$(this);
-                //         that.removeClass('i-active');
-                //         that.siblings('video').get(0).play();
-                //         that.siblings('video').bind('ended',function () {
-                //             that.addClass('i-active');
-                //         });
-                //     });
-
-
                 //轮播图下面  收藏/取消收藏
                 $('.shoucang').unbind().click(getShoucangStatus);
 

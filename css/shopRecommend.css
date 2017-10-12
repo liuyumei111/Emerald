@@ -33,6 +33,9 @@ header i {
   top: 10.41666667px;
   right: 13.88888889px;
 }
+.box {
+  margin-bottom: 30px;
+}
 .box .swiper-container {
   width: 100%;
   height: 208.33333333px;
@@ -105,10 +108,14 @@ header i {
 }
 .box .no-info {
   text-align: center;
-  background: #f0f0f0;
   position: fixed;
-  left: 38%;
   bottom: 0;
+  color: #c1c1c1;
+  font-size: 10.41666667px;
+  width: 100%;
+  padding-top: 4px;
+  border-top: 1px solid #c1c1c1;
+  padding-bottom: 4px;
 }
 .box .none-data {
   position: relative;
