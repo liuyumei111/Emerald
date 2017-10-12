@@ -173,7 +173,7 @@ header span {
   height: 20.83333333px;
   display: block;
   background: url("../images/xin.png") no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .comDe-con .boutique ul a li .comm-detail .comm-detail-top .cdt-right span {
   font-size: 10.41666667px;
@@ -184,7 +184,7 @@ header span {
   height: 20.83333333px;
   display: block;
   background: url("../images/xin1.png") no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 .comDe-con .boutique ul a li .comm-detail .comm-detail-top .cdt-right-active span {
   font-size: 10.41666667px;
