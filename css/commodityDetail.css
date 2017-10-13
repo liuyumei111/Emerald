@@ -53,7 +53,7 @@ header span {
 }
 .comDe-con .textDetail .textDetail-box .textDetail-img {
   padding-left: 19.09722222px;
-  border-left: 0.34722222px solid #515860;
+  border-left: 1px solid #515860;
   margin-left: 13.88888889px;
 }
 .comDe-con .textDetail .textDetail-box .textDetail-img .imgBanner {
@@ -167,6 +167,7 @@ header span {
   margin-left: 8%;
 }
 .comDe-con .boutique ul a li .comm-detail .comm-detail-top .cdt-right .img {
+  margin-left: 6%;
   width: 20.83333333px;
   height: 20.83333333px;
   display: block;
