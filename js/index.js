@@ -51,7 +51,7 @@
         success:function (data) {
             if(data.errorCode==200){
                 var data=data.data;
-                // console.log(data);
+                console.log(data);
                 //轮播图渲染数据
                 $('#box').html(indexBoxCmp(data));
 

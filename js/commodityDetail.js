@@ -56,6 +56,7 @@ function clickVideo(type) {
 
                 //轮播图下面  收藏/取消收藏
                 function getShoucangStatus() {
+                    alert(productId)
                     var that = $(this);
                     $.ajax({
                         url: C.interface.toggleStore,
@@ -112,6 +113,7 @@ function clickVideo(type) {
 
                 // // 新品推荐  收藏/取消收藏
                 $('.cdt-right').unbind().click(function (e) {
+                    alert(productId)
                     var that = $(this);
                     e.stopPropagation();
                     e.preventDefault();

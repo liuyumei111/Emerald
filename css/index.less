@@ -135,6 +135,10 @@ header {
             margin-top: 20/@px;
             margin-bottom: 15/@px;
             color: #52585f;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
           }
           span {
             font-size: 40/@px;
@@ -172,5 +176,14 @@ header {
       }
     }
 
+  }
+  //没有更多信息了
+  .no-info{
+    text-align: center;
+    color: #c1c1c1;
+    font-size: 30/@px;
+    width: 100%;
+    padding-top: 6px;
+    padding-bottom: 4px;
   }
 }

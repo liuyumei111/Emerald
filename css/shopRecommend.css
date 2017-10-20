@@ -72,6 +72,10 @@ header i {
   margin-top: 6.94444444px;
   margin-bottom: 5.20833333px;
   color: #52585f;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 .box .newRecommend ul > a li span {
   font-size: 13.88888889px;
@@ -114,7 +118,6 @@ header i {
   font-size: 10.41666667px;
   width: 100%;
   padding-top: 4px;
-  border-top: 1px solid #c1c1c1;
   padding-bottom: 4px;
 }
 .box .none-data {
