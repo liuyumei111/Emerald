@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品推荐</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/shopRecommend.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <h1>商品推荐</h1>
+    <span class="history"></span>
+    <i class="choiceTarget"></i>
+</header>
+<!--主要内容-->
+<div class="box shopRecommend-box">
+    <script type="text/x-handlebars-template" id="shopRecommend-box">
+        <!--商品推荐-->
+        <div class="newRecommend">
+            <ul>
+                {{#each list}}
+                <a href="commodityDetail.html?productId={{id}}">
+                    <li>
+                        <div class="shop-img">
+                            <img src='images/jiazai.png' data-original={{images}} class="lazy" alt="">
+                        </div>
+                        <p>{{name}}</p>
+                        <span>{{price}}</span>
+                    </li>
+                </a>
+                {{/each}}
+            </ul>
+        </div>
+    </script>
+    <!--页面加载中-->
+    <div class="loader">
+        <span>页面加载中
+        <i></i></span>
+    </div>
+    <!--没有更多数据了-->
+    <div class="no-info"><span>我是有底线的....</span></div>
+</div>
+<!--筛选层-->
+<div class="choice">
+    <script type="text/x-handlebars-template" id="choice">
+    <div class="header">
+        <h1>筛选</h1>
+        <span class="close"></span>
+        <i class="goals"></i>
+    </div>
+    <ul class="choice-ul">
+        {{#each data}}
+        <li>
+            <span class="choice-target choice-target{{@index}}">选择{{name}} <i></i></span>
+            <ol class="choice-ul-ol none">
+                {{#each codes}}
+                <li data-id={{id}}>{{name}}</li>
+                {{/each}}
+            </ol>
+        </li>
+        {{/each}}
+    </ul>
+    </script>
+</div>
+
+
+<!--引入js文件-->
+<script src="js/zepto.min.js"></script>
+<script src="js/lazyload.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/handlebars-v4.0.10.js"></script>
+<script src="js/common.js"></script>
+<script src="js/shopRecommend.js"></script>
+</body>
+</html>

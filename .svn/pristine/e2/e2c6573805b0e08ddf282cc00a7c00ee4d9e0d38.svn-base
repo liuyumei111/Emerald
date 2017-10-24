@@ -1,0 +1,53 @@
+(function () {
+    //用模板编译数据
+    var sCBoxTpl=$('#sC-box').html();
+    var sCBoxCmp=Handlebars.compile(sCBoxTpl);
+
+     $.ajax({
+         url:C.interface.categorySub,
+         type:'POST',
+         dataType:'json',
+         success:function (data) {
+             if(data.errorCode==200){
+                 console.log(data);
+                 $('.sC-box').html(sCBoxCmp(data));
+                 //设置左侧背景颜色高度
+                 $('.sC-box-ul-bg').css('height',$(document).height());
+
+                 var leftList=$('.leftList');
+                 //1.第一个左侧的li状态选中 2.去掉箭头 3.显示第一个右侧的内容
+                 leftList.eq(0).addClass('li-active');
+                 leftList.eq(0).find('i').removeClass('i-active');
+                 leftList.eq(0).find('.sC-box-ol').removeClass('none');
+                 //点击左侧显示右侧
+                 leftList.each(function (index,item) {
+                     $(item).click(function () {
+                         var that=$(this);
+                         //1.左侧：点击样式
+                         that.addClass('li-active').siblings().removeClass('li-active');
+                         //1.箭头全部加上2.当前点击去掉箭头
+                         $('.iClass').addClass('i-active');
+                         that.find('i').removeClass('i-active');
+                         // 1.右侧的内容全部都影藏  2.当前点击下的显示
+                         $('.sC-box-ol').addClass('none');
+                         that.find('.sC-box-ol').removeClass('none');
+                     })
+                 });
+                 // 点击右侧的类目进入到列表页样式改变
+                 $('.ol-Item').click(function () {
+                     $(this).addClass('a-class')
+                 })
+
+             }else if(data.errorCode==0){
+                 //    token过期,跳转到登录页面
+             }else{
+                 alert(data.errorMsg)
+             }
+         },
+         error:function () {
+             alert('服务器异常')
+         }
+     });
+
+})();
+

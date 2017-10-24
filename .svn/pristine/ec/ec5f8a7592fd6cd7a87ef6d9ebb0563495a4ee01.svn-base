@@ -1,0 +1,206 @@
+body {
+  background: #fff;
+}
+header {
+  width: 100%;
+  line-height: 45.83333333px;
+  position: relative;
+  border-bottom: 1px solid #d1d1d1;
+}
+header h1 {
+  text-align: center;
+  font-size: 18.75px;
+  color: #52585f;
+}
+header span {
+  width: 27.77777778px;
+  height: 20.83333333px;
+  background: url("../images/fanhui.png") no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  position: absolute;
+  top: 13.88888889px;
+  left: 13.88888889px;
+}
+.comDe-con .swiper-container {
+  width: 100%;
+  margin: 0px auto;
+}
+.comDe-con .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 6.25px;
+  background: #fff;
+}
+.comDe-con .swiper-container .swiper-slide img {
+  width: 100%;
+}
+.comDe-con .textDetail {
+  padding: 13.88888889px 17.36111111px;
+}
+.comDe-con .textDetail .textDetail-box {
+  display: flex;
+  height: 38.19444444px;
+}
+.comDe-con .textDetail .textDetail-box .textDetail-name {
+  font-size: 15.97222222px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  line-height: 19.09722222px;
+  width: 80%;
+  color: #515860;
+}
+.comDe-con .textDetail .textDetail-box .textDetail-img {
+  padding-left: 19.09722222px;
+  border-left: 1px solid #515860;
+  margin-left: 13.88888889px;
+}
+.comDe-con .textDetail .textDetail-box .textDetail-img .imgBanner {
+  width: 26.73611111px;
+  height: 23.95833333px;
+  display: block;
+  background: url("../images/xin.png") no-repeat;
+  background-size: cover;
+}
+.comDe-con .textDetail .textDetail-box .textDetail-img span {
+  font-size: 12.84722222px;
+  margin-top: 2.77777778px;
+  color: #515860;
+}
+.comDe-con .textDetail .textDetail-box .textDetail-img-active {
+  padding-left: 19.09722222px;
+  border-left: 0.34722222px solid #515860;
+  margin-left: 13.88888889px;
+}
+.comDe-con .textDetail .textDetail-box .textDetail-img-active .imgBanner {
+  width: 26.73611111px;
+  height: 23.95833333px;
+  display: block;
+  background: url("../images/xin1.png") no-repeat;
+  background-size: cover;
+}
+.comDe-con .textDetail .textDetail-box .textDetail-img-active span {
+  font-size: 12.84722222px;
+  margin-top: 2.77777778px;
+  color: #c1b480;
+}
+.comDe-con .textDetail .money {
+  margin: 10.41666667px 0 16.31944444px 0;
+  display: inherit;
+  font-size: 18.05555556px;
+  color: #c1b480;
+}
+.comDe-con .textDetail .textDetail-text {
+  font-size: 13.19444444px;
+  color: #61686e;
+  line-height: 16.66666667px;
+}
+.comDe-con .video {
+  width: 100%;
+  position: relative;
+}
+.comDe-con .video > .i-active {
+  width: 59.02777778px;
+  height: 59.02777778px;
+  display: inline-block;
+  position: absolute;
+  background: url("../images/bofang.png") no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.comDe-con .boutique {
+  margin: 20.83333333px 0 10.41666667px 0;
+}
+.comDe-con .boutique h2 {
+  color: #ffffff;
+  font-size: 15.97222222px;
+  background: #c3b380;
+  text-align: center;
+  padding: 9.375px 0;
+  margin-bottom: 10.41666667px;
+}
+.comDe-con .boutique ul a li {
+  padding: 6.94444444px 13.88888889px;
+  border-top: 0.34722222px solid #d1d1d1;
+  border-bottom: 0.34722222px solid #d1d1d1;
+  display: flex;
+  margin-bottom: 6.94444444px;
+}
+.comDe-con .boutique ul a li .comm-img {
+  width: 25%;
+  margin-right: 13.19444444px;
+}
+.comDe-con .boutique ul a li .comm-img img {
+  width: 100%;
+}
+.comDe-con .boutique ul a li .comm-detail {
+  width: 75%;
+}
+.comDe-con .boutique ul a li .comm-detail .comm-detail-top {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.comDe-con .boutique ul a li .comm-detail .comm-detail-top .cdt-left {
+  width: 80%;
+}
+.comDe-con .boutique ul a li .comm-detail .comm-detail-top .cdt-left p {
+  font-size: 15.97222222px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  line-height: 17.01388889px;
+  margin-bottom: 4.86111111px;
+  color: #53585e;
+}
+.comDe-con .boutique ul a li .comm-detail .comm-detail-top .cdt-left span {
+  font-size: 15.27777778px;
+  color: #c3b380;
+}
+.comDe-con .boutique ul a li .comm-detail .comm-detail-top .cdt-right {
+  margin-left: 8%;
+}
+.comDe-con .boutique ul a li .comm-detail .comm-detail-top .cdt-right .img {
+  margin-left: 6%;
+  width: 20.83333333px;
+  height: 20.83333333px;
+  display: block;
+  background: url("../images/xin.png") no-repeat;
+  background-size: 100% 100%;
+}
+.comDe-con .boutique ul a li .comm-detail .comm-detail-top .cdt-right span {
+  font-size: 10.41666667px;
+  color: #515860;
+}
+.comDe-con .boutique ul a li .comm-detail .comm-detail-top .cdt-right-active .img {
+  margin-left: 6%;
+  width: 20.83333333px;
+  height: 20.83333333px;
+  display: block;
+  background: url("../images/xin1.png") no-repeat;
+  background-size: 100% 100%;
+}
+.comDe-con .boutique ul a li .comm-detail .comm-detail-top .cdt-right-active span {
+  font-size: 10.41666667px;
+  color: #c1b480;
+}
+.comDe-con .boutique ul a li .comm-detail .comm-detail-bottom {
+  padding-top: 6.94444444px;
+  height: 50%;
+  width: 100%;
+}
+.comDe-con .boutique ul a li .comm-detail .comm-detail-bottom p {
+  font-size: 13.19444444px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  line-height: 15.27777778px;
+  color: #61686e;
+}

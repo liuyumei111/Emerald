@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <h1>GADEITE</h1>
+    <span class="user"></span>
+    <a class="leimuIng" href="shopCatalog.html"></a>
+
+</header>
+<!--主要内容-->
+<div class="box" id="box">
+    <script type="text/x-handlebars-template" id="index-box">
+        <!-- 轮播图 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                {{#each banners}}
+                <div class="swiper-slide">
+                    <img src={{url}} alt="">
+                </div>
+                {{/each}}
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <!--类别下拉-->
+        <div class="category">
+            <ol class="category-ol">
+                {{#each categorys}}
+                <a href="searchShop.html?categoryId={{id}}">
+                <li>
+                    <img src='images/jiazai.png' data-original={{image}} class="lazy" alt="">
+                    <span>{{name}}</span>
+                </li>
+                </a>
+                {{/each}}
+                <a href="javascript:;" class="category-hide">
+                <li>
+                    <img src="images/hide.png" alt="">
+                    <span>展开</span>
+                </li>
+                </a>
+            </ol>
+        </div>
+        <!--新品推荐-->
+        <div class="newRecommend">
+            <div class="newRecommend-hea">
+                <div class="newRecommendHea-box">
+                    <span>新品推荐</span>
+                    <a href="newRecommend.html">查看更多</a>
+                </div>
+            </div>
+            <ul>
+                {{#each news}}
+                <a href="commodityDetail.html?productId={{id}}">
+                    <li>
+                        <div class="shop-img">
+                            <img src='images/jiazai.png' data-original={{mainImage}} class="lazy" alt="">
+                        </div>
+                        <p>{{name}}</p>
+                        <span>{{price}}</span>
+                    </li>
+                </a>
+                {{/each}}
+            </ul>
+        </div>
+        <!--商品推荐-->
+        <div class="newRecommend">
+            <div class="newRecommend-hea">
+                <div class="newRecommendHea-box">
+                    <span>商品推荐</span>
+                    <a href="shopRecommend.html">查看更多</a>
+                </div>
+            </div>
+            <ul>
+                {{#each products}}
+                <a href="commodityDetail.html?productId={{id}}">
+                    <li>
+                        <div class="shop-img">
+                            <img src='images/jiazai.png' data-original={{mainImage}} class="lazy" alt="">
+                        </div>
+                        <p>{{name}}</p>
+                        <span>{{price}}</span>
+                    </li>
+                </a>
+                {{/each}}
+            </ul>
+        </div>
+        <!--页面加载中-->
+        <!--<div class="loader">-->
+        <!--<span>页面加载中-->
+        <!--<i></i></span>-->
+        <!--</div>-->
+        <div class="no-info"><span>没有更多数据</span></div>
+    </script>
+</div>
+
+<!--引入js文件-->
+<script src="js/zepto.min.js"></script>
+<script src="js/lazyload.min.js"></script>
+<script src="js/swiper-3.4.2.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/handlebars-v4.0.10.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
