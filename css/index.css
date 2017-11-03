@@ -1,44 +1,49 @@
 html,
 body {
   background: #fff;
+  font-size: 0.15rem;
 }
 header {
   width: 100%;
-  line-height: 45.83333333px;
-  position: relative;
+  line-height: 0.25142857rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 99;
 }
 header h1 {
   text-align: center;
-  font-size: 18.75px;
+  font-size: 0.15428571rem;
   color: #c3b380;
 }
 header span {
-  width: 20.83333333px;
-  height: 26.38888889px;
+  width: 0.17142857rem;
+  height: 0.21714286rem;
   background: url("../images/user1.png") no-repeat;
   background-size: 100% 100%;
   display: inline-block;
   position: absolute;
-  top: 10.41666667px;
-  left: 13.88888889px;
+  top: 0.03428571rem;
+  left: 0.11428571rem;
 }
 header a {
-  width: 23.61111111px;
-  height: 24.30555556px;
+  width: 0.19428571rem;
+  height: 0.2rem;
   background: url("../images/user2.png") no-repeat;
   background-size: 100% 100%;
   display: inline-block;
   position: absolute;
-  top: 10.41666667px;
-  right: 13.88888889px;
+  top: 0.05142857rem;
+  right: 0.11428571rem;
 }
 .box .swiper-container {
   width: 100%;
-  margin: 0px auto;
+  margin: 0rem auto;
 }
 .box .swiper-container .swiper-slide {
   text-align: center;
-  font-size: 6.25px;
+  font-size: 0.05142857rem;
   background: #fff;
 }
 .box .swiper-container .swiper-slide img {
@@ -55,20 +60,21 @@ header a {
 }
 .box .category .category-ol > a {
   width: 20%;
-  height: 62.5px;
-  margin-top: 10.41666667px;
+  margin-top: 0.08571429rem;
   text-align: center;
   color: #52585f;
 }
 .box .category .category-ol > a img {
-  width: 41.66666667px;
-  height: 41.66666667px;
+  /* width: 120/@px;
+          height: 120/@px;*/
+  width: 80%;
+  height: 80%;
   display: block;
-  margin-bottom: 4.16666667px;
+  margin-bottom: 0.05714286rem;
   border-radius: 50%;
 }
 .box .category .category-ol > a span {
-  font-size: 12.5px;
+  font-size: 0.11428571rem;
 }
 .box .category .none {
   display: none;
@@ -84,40 +90,40 @@ header a {
   flex-direction: column;
 }
 .box .newRecommend {
-  margin-top: 12.15277778px;
+  margin-top: 0.1rem;
 }
 .box .newRecommend .newRecommend-hea {
-  height: 26.38888889px;
+  height: 0.21714286rem;
   background: #c3b380;
 }
 .box .newRecommend .newRecommend-hea .newRecommendHea-box {
-  margin-left: 10.41666667px;
+  margin-left: 0.08571429rem;
   background: #f0f0f0;
   height: 100%;
 }
 .box .newRecommend .newRecommend-hea .newRecommendHea-box span {
-  font-size: 11.80555556px;
+  font-size: 0.09714286rem;
   color: #c3b37f;
   text-align: left;
-  margin-top: 6.94444444px;
-  margin-left: 7.63888889px;
+  margin-top: 0.05714286rem;
+  margin-left: 0.06285714rem;
   display: inline-block;
 }
 .box .newRecommend .newRecommend-hea .newRecommendHea-box a {
   color: #6c6459;
   float: right;
-  font-size: 11.80555556px;
-  margin-top: 6.94444444px;
-  margin-right: 14.58333333px;
+  font-size: 0.09714286rem;
+  margin-top: 0.05714286rem;
+  margin-right: 0.12rem;
 }
 .box .newRecommend ul {
-  padding: 0 13.88888889px;
+  padding: 0 0.11428571rem;
   display: flex;
   flex-wrap: wrap;
 }
 .box .newRecommend ul a {
   width: 48%;
-  margin-top: 10.41666667px;
+  margin-top: 0.08571429rem;
 }
 .box .newRecommend ul a li .shop-img {
   width: 100%;
@@ -127,10 +133,10 @@ header a {
   height: 100%;
 }
 .box .newRecommend ul a li p {
-  font-size: 13.19444444px;
-  line-height: 15.97222222px;
-  margin-top: 6.94444444px;
-  margin-bottom: 5.20833333px;
+  font-size: 0.10857143rem;
+  line-height: 0.2rem;
+  margin-top: 0.05714286rem;
+  margin-bottom: 0.04285714rem;
   color: #52585f;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -138,7 +144,7 @@ header a {
   overflow: hidden;
 }
 .box .newRecommend ul a li span {
-  font-size: 13.88888889px;
+  font-size: 0.11428571rem;
   color: #c2b380;
 }
 .box .newRecommend ul a:nth-child(odd) {
@@ -146,31 +152,31 @@ header a {
 }
 .box .loader {
   width: 100%;
-  height: 26.38888889px;
+  height: 0.21714286rem;
   background: #f0f0f0;
   text-align: center;
 }
 .box .loader span {
-  font-size: 11.80555556px;
+  font-size: 0.09714286rem;
   color: #868686;
-  margin-top: 6.94444444px;
+  margin-top: 0.05714286rem;
   display: inline-block;
   position: relative;
 }
 .box .loader span i {
-  width: 11.11111111px;
-  height: 11.11111111px;
+  width: 0.09142857rem;
+  height: 0.09142857rem;
   background: url("../images/loader.png") no-repeat;
   display: inline-block;
   background-size: cover;
   position: absolute;
-  top: 0px;
-  left: -13.88888889px;
+  top: 0rem;
+  left: -0.11428571rem;
 }
 .box .no-info {
   text-align: center;
   color: #c1c1c1;
-  font-size: 10.41666667px;
+  font-size: 0.08571429rem;
   width: 100%;
   padding-top: 6px;
   padding-bottom: 4px;

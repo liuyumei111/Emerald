@@ -5,6 +5,13 @@
     <title>商品详情</title>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 375 + 'px';
+
+        window.onresize = function(){
+            document.documentElement.style.fontSize = document.documentElement.clientWidth * 100 / 375 + 'px';
+        }
+    </script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
     <link rel="stylesheet" href="css/commodityDetail.css">
@@ -64,11 +71,11 @@
             </video>
             <i class="video-play i-active" onclick=clickVideo(this)></i>
         </div>
-        {{/detail}}
+
 
         <!--精品推荐-->
         <div class="boutique">
-            <h2>精品推荐</h2>
+           <!-- <h2>精品推荐</h2>
             {{#each suggests}}
             <ul>
                 <a href="commodityDetail.html?productId={{id}}">
@@ -105,9 +112,21 @@
                     </li>
                 </a>
             </ul>
-            {{/each}}
-        </div>
+            {{/each}}-->
+            <!--二次修改,改成图片排列-->
 
+            <ul>
+                <li>
+                    {{#each (splitDetailImg images)}}
+                    <img src="{{name}}" alt="">
+                    {{/each}}
+                </li>
+            </ul>
+
+
+
+        </div>
+        {{/detail}}
     </script>
 
 </div>

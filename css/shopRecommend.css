@@ -4,9 +4,13 @@ body {
 }
 header {
   width: 100%;
-  line-height: 45.83333333px;
-  position: relative;
+  line-height: 30.55555556px;
   border-bottom: 1px solid #d1d1d1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #fff;
+  z-index: 99;
 }
 header h1 {
   text-align: center;
@@ -20,7 +24,7 @@ header span {
   background-size: 100% 100%;
   display: inline-block;
   position: absolute;
-  top: 13.88888889px;
+  top: 6.25px;
   left: 13.88888889px;
 }
 header i {
@@ -30,7 +34,7 @@ header i {
   background-size: 100% 100%;
   display: inline-block;
   position: absolute;
-  top: 10.41666667px;
+  top: 5.55555556px;
   right: 13.88888889px;
 }
 .box {

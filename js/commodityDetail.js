@@ -56,7 +56,7 @@ function clickVideo(type) {
 
                 //轮播图下面  收藏/取消收藏
                 function getShoucangStatus() {
-                    alert(productId)
+                    // alert(productId)
                     var that = $(this);
                     $.ajax({
                         url: C.interface.toggleStore,
@@ -111,7 +111,7 @@ function clickVideo(type) {
                     });
                 }
 
-                // // 新品推荐  收藏/取消收藏
+              /*  // // 新品推荐  收藏/取消收藏
                 $('.cdt-right').unbind().click(function (e) {
                     alert(productId)
                     var that = $(this);
@@ -168,7 +168,7 @@ function clickVideo(type) {
                             alert('服务器异常')
                         }
                     });
-                });
+                });*/
 
             } else if (data.errorCode == 0) {
                 //Token 过期的情况下,调取原生的方法到登录页面
