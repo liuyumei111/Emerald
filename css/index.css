@@ -24,7 +24,7 @@ header span {
   background-size: 100% 100%;
   display: inline-block;
   position: absolute;
-  top: 0.03428571rem;
+  top: 0.02857143rem;
   left: 0.11428571rem;
 }
 header a {
@@ -34,7 +34,7 @@ header a {
   background-size: 100% 100%;
   display: inline-block;
   position: absolute;
-  top: 0.05142857rem;
+  top: 0.04285714rem;
   right: 0.11428571rem;
 }
 .box .swiper-container {
