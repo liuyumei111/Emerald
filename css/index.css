@@ -37,6 +37,9 @@ header a {
   top: 0.04285714rem;
   right: 0.11428571rem;
 }
+.box {
+  margin-top: 0.22857143rem;
+}
 .box .swiper-container {
   width: 100%;
   margin: 0rem auto;
