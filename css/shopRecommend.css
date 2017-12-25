@@ -4,7 +4,7 @@ body {
 }
 header {
   width: 100%;
-  line-height: 30.55555556px;
+  line-height: 44.09722222px;
   border-bottom: 1px solid #d1d1d1;
   position: fixed;
   left: 0;
@@ -24,7 +24,7 @@ header span {
   background-size: 100% 100%;
   display: inline-block;
   position: absolute;
-  top: 6.25px;
+  top: 13.19444444px;
   left: 13.88888889px;
 }
 header i {
@@ -34,10 +34,11 @@ header i {
   background-size: 100% 100%;
   display: inline-block;
   position: absolute;
-  top: 5.55555556px;
+  top: 11.11111111px;
   right: 13.88888889px;
 }
 .box {
+  margin-top: 44.44444444px;
   margin-bottom: 30px;
 }
 .box .swiper-container {

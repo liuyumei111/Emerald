@@ -97,8 +97,8 @@ $(window).scroll(function () {
     var scrollHeight = $(document).height();
     //浏览器窗口高度
     var windowHeight = $(this).height();
-    console.log('这是浏览器窗口的高度'+windowHeight);
-    console.log('节点高度'+scrollHeight);
+    // console.log('这是浏览器窗口的高度'+windowHeight);
+    // console.log('节点高度'+scrollHeight);
     //此处是滚动条到底部时候触发的事件，在这里写要加载的数据，或者是拉动滚动条的操作
     if (scrollTop + windowHeight == scrollHeight) {
         addRecommend();
