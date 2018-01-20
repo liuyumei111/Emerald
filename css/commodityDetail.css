@@ -30,6 +30,7 @@ header span {
 .comDe-con .swiper-container {
   width: 100%;
   margin: 0rem auto;
+  margin-top: 0.46285714rem;
 }
 .comDe-con .swiper-container .swiper-slide {
   text-align: center;
@@ -117,6 +118,13 @@ header span {
   right: 0;
   bottom: 0;
   margin: auto;
+}
+.comDe-con .video > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.15428571rem;
+  color: red;
 }
 .comDe-con .boutique {
   margin: 0.17142857rem 0 0.08571429rem 0;
